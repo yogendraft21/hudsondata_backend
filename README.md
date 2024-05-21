@@ -21,6 +21,9 @@ pip3 install -r requirements.txt
 # and install the require package again
 pip3 install --upgrade pip
 
+# create a .env file and export your DB_URL also create a database if not created
+export DB_URL="mysql+pymysql://db_usernanme:password@localhost/hudson"
+
 # run the project with uvicorn autoreload to watch the file changes
 uvicorn main:app --reload
 
